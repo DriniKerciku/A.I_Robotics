@@ -82,7 +82,7 @@ def localize(colors,measurements,motions,sensor_right,p_move):
         #normalize our probability
         for j in range(0,y_axis):
             for i in range(0,x_axis):
-                q[j][i] = float(q[j][i]/acc)
+                q[j][i] = q[j][i]/acc
 
         p = list(q)
         q = []
