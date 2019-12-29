@@ -51,7 +51,8 @@ def localize(colors,measurements,motions,sensor_right,p_move):
     x_axis = len(colors[0])
     y_axis = len(colors)
     q = []
-    k = 0
+    k = 0                       #variable to index the right measurements while sensing; NOTE: number of measurements 
+                                #is the same as the number of motions
     acc = 0                     #used to accumulating the total probability after sensing 
     
     for move in motions:
@@ -85,7 +86,7 @@ def localize(colors,measurements,motions,sensor_right,p_move):
 
         p = list(q)
         q = []
-        k = k+1
+        k = k+1                 #next measurement made
 
     return p
 
