@@ -1,3 +1,6 @@
+#The code shows a simple 1 Dimensional localization using the Monte Carlo method. The method sees the world as a histogram (discrete
+#distribution) and is also known as particle filter localization. 
+
 p=[0, 1, 0, 0, 0]
 world=['green', 'red', 'red', 'green', 'green']
 measurements = ['red', 'green']
